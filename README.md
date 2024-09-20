@@ -1,1 +1,13 @@
 # ConfigServer
+
+
+# DB CREATION
+create database productdb;
+
+create user 'product-team'@'%' identified by 'product-team-pass';
+
+create user 'product-team'@'localhost' identified by 'product-team-pass';
+
+grant all on *.* to 'product-team'@'%' with grant option;
+
+flush privileges;
