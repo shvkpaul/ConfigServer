@@ -11,3 +11,6 @@ create user 'product-team'@'localhost' identified by 'product-team-pass';
 grant all on *.* to 'product-team'@'%' with grant option;
 
 flush privileges;
+
+# Zipkin
+http://localhost:9411/zipkin/

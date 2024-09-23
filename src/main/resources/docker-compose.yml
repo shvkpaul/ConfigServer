@@ -14,6 +14,12 @@ services:
     volumes:
       - db:/var/lib/mysql
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  zipkin:
+    image: openzipkin/zipkin:latest
+    ports:
+      - '9411:9411'
+
 volumes:
   db:
     driver: local
