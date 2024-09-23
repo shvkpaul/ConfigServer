@@ -10,3 +10,4 @@ spring:
         git:
           uri: https://github.com/shvkpaul/spring-app-config.git
           clone-on-start: true
+          refresh-rate: 1
