@@ -14,3 +14,6 @@ flush privileges;
 
 # Zipkin
 http://localhost:9411/zipkin/
+
+# Kafka Topic
+http://localhost:8085/ui/docker-kafka-server/topic
