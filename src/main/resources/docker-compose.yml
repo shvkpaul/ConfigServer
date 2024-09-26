@@ -29,6 +29,15 @@ services:
       - redis-data:/data
     restart: always
 
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    ports:
+      - '8086:8081'
+    restart: always
+
   kafka:
     image: confluentinc/cp-kafka:latest
     hostname: kafka
